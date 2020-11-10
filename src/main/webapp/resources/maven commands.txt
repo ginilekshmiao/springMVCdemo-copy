@@ -1,0 +1,38 @@
+setting up an maven project and importing it to eclipse
+mvn archetype:generate "-DgroupId=com.skillsoft.springboot" "-DartifactId=SpringBootHelloApp" 
+"-DarchetypeArtifactId=maven-archetype-quickstart" "-DinteractiveMode=false"
+ //new maven project is generated with some starter code
+
+.......................................................................................................
+
+to create spring applctn we need access to spring framework and that we means need access to jar file that contains spring framework
+------------------------------------------------------------------------------------------------------------
+file->new->java project ( give name -> finish)
+
+standard dirctory structure for maven
+src->new->folder->name folder as main
+main->new->folder->name folder as java
+main.java->build path->use as source folder
+src->delete
+src/main/java->new->class->give a package name and class name->checkon public void static...->finish(main package and class. it invokes other class methods)
+new package->new->class->give a class name(a simple class contains a method)
+new package->new->class->give a class name(a simple class contains a method)
+run!
+to run he prj by maven
+prjname->new->file-> name it as pom.xml
+
+now src/main/java is the source folder 
+-------------------------------------------------
+setting getter and setter
+
+select variable name and go to source->generate getter and setter
+------------------------------------------------------------------------
+
+Serving static files
+--------------------------------------------------------------------------
+<mvc:resources mapping="/myResources/**" location="/resources/"/>
+--------------------------------------------------------------------
+
+redirects
+----------------------------------------------------------------------
+return "redirect:anotherUrlMapping"
